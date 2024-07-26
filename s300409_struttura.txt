@@ -1,0 +1,9 @@
+home.php
+chi_siamo.php
+faq.php
+login.php,form:loginForm,text:user,password:pwd,submit:skip,submit:login,reset:res
+registrazione.php,form:registrationForm,text:name,text:surname,text:address,text:birthdate,text:nick,password:password,reset:res,submit:send
+bacheca.php,date:start_date,date:end_date
+scopri.php,text:parolaTweetFilter
+scrivi.php,form:newTweetForm,textarea:testoTweet,reset:res,submit:publish
+logout.php

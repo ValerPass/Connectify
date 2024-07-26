@@ -1,0 +1,869 @@
+body{
+    font-family: Helvetica, sans-serif
+}
+
+#myHeader{
+    height: 20%;
+    background-color: rgb(255, 189, 113);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#myFooter{
+    margin-top: 10%;
+    border-top: 1px solid;
+    border-top-color: gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo{
+    width: 50%;
+}
+
+.ancoraNavigazione{
+    color: rgb(90, 89, 89);
+    text-decoration: none;
+    margin-right: 4%;
+}
+
+.ancoraNavigazione.active {
+    color: black;
+}
+
+.ancoraNavigazione:hover{
+    color: black;
+}
+
+#headerSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#myNav{
+    display: flex;
+    justify-content: end;
+}
+
+
+#headerDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pFooter{
+    color: gray;
+}
+
+#mainRegistrazione{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#mainNewTweet{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fontCopperplate{
+    font-family: Copperplate, Copperplate Gothic Light, fantasia;
+}
+
+.fontSizeBigger{
+    font-size: 3em;
+}
+
+.specialButton{
+    width: 100% !important;
+    background-color:rgb(161, 183, 255) !important
+}
+
+.formSection{
+    margin-top: 4%;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonSection{
+    margin-top: 4%;
+    display: flex;
+    justify-content: end;
+}
+
+.formLayout{
+    padding: 2%;
+    border: 3px solid rgb(255, 189, 113);
+    width: 30%;
+    background-color: rgb(250 242 227 / 73%);
+}
+
+input{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input:focus{
+    border: 1.5px solid rgb(158, 155, 155);
+    outline: none;
+}
+
+input[type="date"]{
+    padding: 10px 20px;
+    border: 1.5px solid rgb(255, 188, 126);
+    margin-right: 5%;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-left: 2%;
+}
+
+button[type="reset"]{
+    background-color: #a6a3a3;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 1.5%;
+}
+
+button[type="submit"]{
+    background-color: rgb(250, 161, 59);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.warningMessage{
+    color: rgb(57, 57, 57);
+    font-size: 1em;
+}
+
+.errorMessageSection{
+    margin-top: 2.5%;
+    background-color: rgb(255, 208, 208);
+    padding: 0.7%;
+    display: flex;
+    justify-content: center;
+}
+
+.successMessage{
+    color: rgb(102 94 94);
+    font-size: 1em;
+}
+
+.successMessageSection{
+    margin-top: 2.5%;
+    background-color: rgb(183 228 171);
+    padding: 0.7%;
+    display: flex;
+    justify-content: center;
+}
+
+.errorInputComp{
+    color: red;
+    font-size: 0.7em;
+    display: block;
+}
+
+.labelMargin{
+    margin-bottom: 1.5%;
+}
+
+.divTwoInputs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.welcomeMessage{
+    font-size: 1.2em;
+    margin-left: 0.5em;
+    font-weight: 700;
+    color: #393939;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 0%;
+    margin-top: 3.3%;
+}
+
+.colorBrighter{
+    color:rgb(131 112 112) !important;
+}
+
+#sectionWelcomeMessage{
+    display: flex;
+    justify-content: start;
+}
+
+.dangerIcon{
+    width: 15em;
+    display: block;
+    margin: 0 auto;
+}
+
+.identitàMessage{
+    color: rgb(255, 194, 61);
+    font-size: 4em;
+    text-align: center;
+}
+
+.articleUnauthorized{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+.errorParagraphMessage{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.sectionHomeIcon{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: -6.2%;
+    margin-right: -3%;
+}
+
+.disabled {
+    pointer-events: none; /* Disabilito qualsiasi interazione con l'elemento */
+    opacity: 0.5;
+    cursor: default;
+}
+
+
+.homeIcon{
+    width: 50%;
+}
+
+#divBachecaTweets{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.infoPersonaleSect{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5%;
+}
+
+.borderSeparatore{
+    border-top: #dee2e6 1px solid;
+    padding: 0.5%;
+}
+
+.borderSeparatoreBlack{
+    border-top: #4d4d4d 1px solid;
+    padding: 0.5%;
+}
+
+.borderSeparatoreBigger{
+    border-top: #dee2e6 1px solid;
+    padding: 0.5%;
+    margin-top: 4%;
+}
+
+.text-bold{
+    font-weight: bold;
+    color: #333;
+    font-size: 1.5em;
+}
+
+.text-italic{
+    font-style: italic;
+    color: #888;
+    font-size: 1.2em;
+}
+
+.tweetText{
+    font-size: 1.1em;
+}
+
+.articleTweet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px rgb(255, 189, 113) solid;
+    background-color: rgb(250 242 227 / 73%);
+    border-radius: 0.5rem;
+    margin-top: 1.5%;
+    padding: 2%;
+    width: 43vw;
+    margin-right: 2.5em;
+    margin-left: auto;
+}
+
+.articleTweet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px rgb(255, 189, 113) solid;
+    background-color: rgb(255 248 236 / 73%);
+    border-radius: 0.5rem;
+    margin-top: 1.5%;
+    padding: 2%;
+    width: 43vw;
+    margin-right: 2.5em;
+    margin-left: auto;
+}
+
+.articleTweetScopri{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px rgb(255, 189, 113) solid;
+    background-color: rgb(255 248 236 / 73%);
+    border-radius: 0.5rem;
+    margin-top: 1.5%;
+    padding: 2%;
+    width: 43vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.articleTweet:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.articleTweetScopri:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+#mainBacheca{
+    margin: 1.5%;
+}
+
+#articleDettagliPersonali{
+    border: rgb(255, 189, 113) 1px solid;
+    border-radius: 0.5rem;
+    padding: 1.5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+.hide{
+    display: none;
+}
+
+.no-tweets-message {
+    display: none;
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    font-size: 2em;
+}
+
+.no-tweets-message-display{
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    font-size: 2em;
+}
+
+.newTweetButton{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(255, 189, 113);
+    padding: 10px 20px;
+    border-radius: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.infoX{
+    font-weight: bolder;
+    font-size: 1.5em;
+
+}
+
+.infoY{
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+#tweetsSection{
+    margin-top: 2%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-end{
+    text-align: end;
+}
+
+.sectionUserDataTweet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.fontSizeBiggerBrown{
+    font-size: 1.2em;
+    color: #ae8231;
+}
+
+.filter-form{
+    margin-left: auto;
+    margin-right: auto;
+    width: 46%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 2%;
+}
+
+.filter-form-word{
+    margin-left: auto;
+    margin-right: auto;
+    width: 46%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 2%;
+}
+
+#noTweetsSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#testoTweet{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #bbbbbb;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.character-count {
+    text-align: left;
+    color: #696969;
+}
+
+.sectionToCenter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#lensLogo{
+    width: 1.7em;
+    margin-left: -2.2em;
+}
+
+#parolaTweetFilter{
+    border: 1px solid rgb(255, 189, 113);
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #6b6b6b; 
+}
+
+aside ul li a {
+    padding: 12px 8px; 
+    display: block; 
+}
+
+aside ul li a:hover {
+    color: #f08812; 
+    background-color: #eeeeee;
+}
+
+aside ul li.active-orange a {
+    color: #f08812;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    /*align-items: center;*/
+}
+
+#sectionPresentazione{
+    background-color: #fff2e3;
+    padding: 1rem 1rem;
+
+}
+
+#testimonianze{
+    margin-top: 4%;
+    background-color: #fff6cfb5;
+    padding: 1rem 1rem;
+}
+
+blockquote{
+    font-style: italic;
+}
+
+#sectionChiSiamo{
+    background-color: #feefef;
+    padding: 1rem 1rem;
+}
+
+#sectionFAQ{
+    padding: 1rem 1rem;
+    background-color: #fffcda;
+}
+
+.marginList{
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+}
+
+.anchorFaq{
+    text-decoration: none;
+    font-weight: bold;
+    color: #f08812;
+}
+
+#noscript{
+    text-align: center;
+    background-color: rgb(255, 203, 203);
+    color: black;
+    font-size: 1.3em;
+    padding: 2%;
+    margin-top: 3%;
+    font-weight: bold;
+}
+
+.col-1{
+    width: 8.33%;
+}
+
+.col-2{
+    width: 16.66%;
+}
+
+.col-3{
+    width: 25%;
+}
+
+.col-4{
+    width: 33.33%;
+}
+
+.col-5{
+    width: 41.66%;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.col-7{
+    width: 58.33%;
+}
+
+.col-8{
+    width: 66.66%;
+}
+
+.col-9{
+    width: 75%;
+}
+
+.col-10{
+    width: 83.33%;
+}
+
+.col-11{
+    width: 91.66%;
+}
+
+.col-12{
+    width: 100%;
+}
+
+@media print{
+    nav, aside{
+        display: none !important;
+    }
+    body{
+        color: black !important;
+        background-color: white !important;
+        font-size: 12pt !important;
+        font-family: Georgia, 'Times New Roman', Times, serif !important;
+    }
+    a{
+        text-decoration: underline !important;
+        color: blue !important;
+    }
+
+    article{
+        border: 1px solid black !important;
+    }
+
+    input{
+        border: 0.1px black solid;
+    }
+    
+    #headerSection{
+        display: none !important;
+    }
+
+    .articleTweetScopri, .articleTweet{
+        width: 65vw !important;
+        border: black solid 1px !important;
+    }
+
+    .filter-form, .successMessageSection, .errorMessageSection, .filter-form-word{
+        display: none !important;
+    }
+
+    .articleHomepageBody{
+        border: none !important;
+    }
+
+    #articleDettagliPersonali, .formLayout{
+        width: 65vw !important;
+    }
+
+    .mainHomepage{
+        width: 100% !important;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    /* Media query per impostare delle regole CSS valide solamente per i dispositivi con una larghezza massima di 500px
+    In genere i telefoni hanno questa larghezza massima. */
+    #myHeader{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: unset;
+    }
+
+
+    #headerDiv{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #myNav{
+        width: 100%;
+        display: inline;
+        text-align: center;
+    }
+
+    #logo{
+        width: 80%;
+    }
+
+    .fontSizeBigger{
+        font-size: 1.8em;
+    }
+
+    #myAside{
+        width: unset;
+    }
+
+    .row{
+        display: block;
+    }
+
+    aside ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .mainHomepage{
+        width: 100%;
+    }
+
+    .formLayout{
+        width: 85%;
+        padding: 4%;
+    }
+
+    .articleTweetScopri, .articleTweet{
+        width: 85vw;
+        margin-top: 5%;
+    }
+
+    #articleDettagliPersonali{
+        width: 90%;
+    }
+    
+    .infoX{
+        font-size: 1.2em;
+    }
+
+    .infoY{
+        font-size: 1.2em;
+    }
+
+    .filter-form{
+        flex-direction: column;
+    }
+
+    .welcomeMessage{
+        font-size: 4vw;
+    }
+
+  }
+
+@media (max-width: 360px) {
+    .nome{
+        display: none;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 1285px) {
+    /* Media query per impostare delle regole CSS valide solamente per i dispositivi con una larghezza mimima di 501px e larghezza massima di 1285px
+    In genere i tablet e i computer piccoli hanno questa larghezza massima. */
+    #myHeader{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: unset;
+    }
+
+
+    #headerDiv{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #myNav{
+        width: 100%;
+        display: inline;
+        text-align: center;
+    }
+
+    #logo{
+        width: 60%;
+    }
+
+    #headerSection{
+        justify-content: start;
+        width: 100%;
+    }
+    .welcomeMessage{
+        font-size: 3vw;
+    }
+
+
+
+}
+
+@media (min-width: 501px) and (max-width: 999px) {
+    #myAside{
+        width: unset;
+    }
+
+    .row{
+        display: block;
+    }
+
+    aside ul {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .mainHomepage{
+        width: 100%;
+    }
+
+    .formLayout{
+        width: 55%;
+        padding: 4%;
+    }
+
+    .articleTweetScopri, .articleTweet{
+        width: 70vw;
+        margin-top: 2%;
+    }
+
+    #articleDettagliPersonali{
+        width: 80%;
+    }
+
+    .filter-form{
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1285px) {
+    #logo{
+        width: 50%;
+    }
+    .welcomeMessage{
+        font-size:2vw;
+    }
+
+    .ancoraNavigazione{
+        font-size: 1.8vw;
+    }
+    
+    .fontSizeBigger{
+        font-size: 5vw;
+    }
+
+    .formLayout{
+        width: 50%;
+        padding: 4%;
+    }
+
+    .articleTweetScopri, .articleTweet{
+        width: 55vw;
+    }
+
+    #articleDettagliPersonali{
+        width: 60%;
+    }
+}
+
+@media (max-width: 950px) {
+    .sectionHomeIcon{
+        display: block;
+        width: 25%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 4%;
+        text-align: center;
+    }
+
+}
